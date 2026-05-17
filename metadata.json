@@ -1,0 +1,6 @@
+{
+  "name": "DeepCheck — AI Deepfake News Detector",
+  "description": "An AI-powered system that analyzes news articles and social media posts for credibility using Gemini with Google Search grounding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
