@@ -96,7 +96,7 @@ export default function App() {
 
   const handleCopyResults = () => {
     if (result) {
-      const report = `DeepCheck Analysis Report
+      const report = `Factscope-AI Analysis Report
 =======================
 Verdict: ${result.label} (Confidence: ${result.confidence}%)
 
@@ -151,7 +151,7 @@ ID: ${result.id}
             <Shield className="h-6 w-6 text-white" />
           </div>
           <div>
-            <h1 className="text-xl font-bold tracking-tight text-white leading-tight">DeepCheck</h1>
+            <h1 className="text-xl font-bold tracking-tight text-white leading-tight">Factscope-AI</h1>
             <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">AI Fact Verification</p>
           </div>
         </div>
