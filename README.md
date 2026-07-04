@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
 
 # Factscope-AI
 
@@ -16,7 +16,7 @@
 [![Grounding](https://img.shields.io/badge/Grounding-Google_Search_Enabled-green?logo=google&logoColor=white)](https://ai.google.dev/gemini-api/docs/google-search)
 [![Deployment](https://img.shields.io/badge/Deploy-Vercel_Ready-black?logo=vercel&logoColor=white)](https://vercel.com)
 
-[**Try Live Demo on AI Studio**](https://ai.studio/apps/d409ece1-0798-4686-b17d-75f1794aa1d1)
+
 
 </div>
 
