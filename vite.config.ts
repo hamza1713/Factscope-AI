@@ -12,8 +12,18 @@ export default defineConfig({
   },
   server: {
     // HMR is disabled in AI Studio via DISABLE_HMR env var.
-    // Do not modifyâ€”file watching is disabled to prevent flickering during agent edits.
+    // Do not modify—file watching is disabled to prevent flickering during agent edits.
     hmr: process.env.DISABLE_HMR !== 'true',
+    // Exclude backend data files from Vite's chokidar watcher.
+    // Without this, writing server/db.json during analysis triggers a full page reload
+    // because Vite watches ALL project files by default.
+    watch: {
+      ignored: [
+        '**/server/db.json',
+        '**/data/**',
+        '**/node_modules/**',
+      ],
+    },
     proxy: {
       '/api': {
         target: 'http://localhost:3001',

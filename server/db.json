@@ -1,0 +1,613 @@
+{
+  "analyses": [
+    {
+      "label": "UNVERIFIED",
+      "confidence": 70,
+      "summary": "This Hacker News discussion centers on the re-release of Anthropic's Fable 5 AI model, with users sharing varied experiences regarding its restrictive safety guardrails, rapid token consumption, and the impending shift to API-only pricing after a brief promotional period.",
+      "explanation": "The content originates from a Hacker News comment thread, comprising user opinions, anecdotal experiences, and interpretations rather than formal news reporting. While it discusses real AI models and companies, the claims about performance, pricing, and operational issues are largely unverified by primary sources within the provided text, and reflect individual user sentiment.",
+      "claims": [
+        {
+          "claim_text": "Fable 5 is Back.",
+          "verdict": "TRUE",
+          "reason": "The Hacker News thread title and numerous comments confirm the re-release of Anthropic's Fable 5 model, following a previous period of unavailability. Anthropic officially announced its redeployment.",
+          "source_title": "Redeploying Fable 5 - Anthropic",
+          "source_url": "https://www.anthropic.com/news/redeploying-fable-5"
+        },
+        {
+          "claim_text": "After July 7, 2026, Claude Fable 5 will no longer be included in subscription plans and will require usage credits.",
+          "verdict": "TRUE",
+          "reason": "Anthropic's official support documentation states that Fable 5 is included for a limited promotional period until July 7, 2026, after which it will only be available via usage credits.",
+          "source_title": "Claude Fable 5 Promotional Access - Claude",
+          "source_url": "https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access"
+        },
+        {
+          "claim_text": "Users frequently experience Fable 5's safeguards flagging prompts and subsequently downgrading to Opus 4.8.",
+          "verdict": "TRUE",
+          "reason": "Multiple user comments consistently report that Fable 5 frequently triggers safety safeguards, leading to messages indicating a switch to the Opus 4.8 model, even for routine coding or non-sensitive topics.",
+          "source_title": "Fable 5 is Back | Hacker News",
+          "source_url": "https://news.ycombinator.com/item?id=48769395"
+        },
+        {
+          "claim_text": "The U.S. government has lifted export controls on Claude Fable 5 and Mythos 5.",
+          "verdict": "TRUE",
+          "reason": "A related Hacker News thread linked in the content confirms the lifting of export controls on these models by the Department of Commerce, an event also covered by various tech news outlets.",
+          "source_title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5 - Hacker News",
+          "source_url": "https://news.ycombinator.com/item?id=48740771"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Redeploying Fable 5 - Anthropic",
+          "uri": "https://www.anthropic.com/news/redeploying-fable-5"
+        },
+        {
+          "title": "Claude Fable 5 Promotional Access - Claude",
+          "uri": "https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access"
+        },
+        {
+          "title": "Fable 5 is Back | Hacker News",
+          "uri": "https://news.ycombinator.com/item?id=48769395"
+        },
+        {
+          "title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5 - Hacker News",
+          "uri": "https://news.ycombinator.com/item?id=48740771"
+        },
+        {
+          "title": "US Lifts Export Controls on Anthropic AI Models Amidst Industry Scrutiny",
+          "uri": "https://aizone.com/news/us-lifts-export-controls-on-anthropic-ai-models-amidst-industry-scrutiny"
+        },
+        {
+          "title": "US lifts export restrictions on Anthropic's 'dangerous' AI amid pushback",
+          "uri": "https://venturebeat.com/ai/us-lifts-export-restrictions-on-anthropics-dangerous-ai-amid-pushback/"
+        }
+      ],
+      "id": "db7d3b15-8ce1-4f2f-aaf9-f700e3f34877",
+      "timestamp": "2026-07-04T11:18:16.034Z",
+      "content_snippet": "[URL: https://news.ycombinator.com/item?id=48752030] Fable 5 is Back | Hacker News\n\nContent:\nFable 5 is Back | Hacker News Hacker New...",
+      "original_input": "https://news.ycombinator.com/item?id=48752030",
+      "is_url": true
+    },
+    {
+      "label": "REAL",
+      "confidence": 100,
+      "summary": "The Brookings Institution article analyzes the long-term implications and provides policy recommendations following a war between the United States, Israel, and Iran, which began over 100 days prior to June 2026 and involved the death of Ayatollah Ali Khamenei and the closure of the Strait of Hormuz.",
+      "explanation": "Within the context of the provided 'current time' of July 4, 2026, and the comprehensive Google search results, the events described in the Brookings article—a war involving the US, Israel, and Iran, the death of Ayatollah Ali Khamenei in February 2026, and the closure of the Strait of Hormuz—are consistently reported as factual occurrences. The article itself is a policy analysis from a reputable think tank based on these 'events' within this simulated timeline.",
+      "claims": [
+        {
+          "claim_text": "More than 100 days have passed since the United States and Israel launched ambitious joint military operations against the Islamic Republic of Iran.",
+          "verdict": "TRUE",
+          "reason": "Multiple sources dated in 2026 confirm that the US and Israel launched strikes against Iran on February 28, 2026, which is more than 100 days prior to June 2026 (the publication date of many sub-articles within the content).",
+          "source_title": "2026 Iran war - Wikipedia; Iran's supreme leader, Ayatollah Ali Khamenei, has been killed - WKAR.org; Israel/US-Iran conflict 2026: Background and UK response - The House of Commons Library; Strait of Hormuz Closure 2026: What It Means for Your Supply Chain and Shipping Routes; 2026 Strait of Hormuz crisis - Wikipedia; Iran's War With Israel and the United States | Global Conflict Tracker; 2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict; 2026 United States naval blockade of Iran - Wikipedia; 2026 Iran war ceasefire - Wikipedia",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0LyLnFjrXgyRMXrzuLXw5HCd6rL5gZGbvVSXUobDMoJfbd6-6HRHmwBDMrdvPgXYQEIhiqewAFwpJIIwcsVgDWaKVuW7ibGFIGGx7VXi1LClLtzXq4TLxv_SDUB2UYaGmKylRA=="
+        },
+        {
+          "claim_text": "The initial strikes killed Ayatollah Ali Khamenei, who had served as the Islamic Republic’s supreme leader for nearly 37 years, along with dozens of senior military and political officials.",
+          "verdict": "TRUE",
+          "reason": "Several news articles and Wikipedia entries from 2026 confirm that Ayatollah Ali Khamenei was killed on February 28, 2026, during joint US-Israeli airstrikes. He had indeed served as Supreme Leader since 1989 (37 years by 2026).",
+          "source_title": "2026 Iran war - Wikipedia; Assassination of Ali Khamenei - Wikipedia; Ayatollah Ali Khamenei obituary - The Guardian; Iran's supreme leader, Ayatollah Ali Khamenei, has been killed - WKAR.org; Iran's War With Israel and the United States | Global Conflict Tracker; 2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict; Iran begins dayslong funeral for the late Supreme Leader Ayatollah Ali Khamenei, killed in war - The Washington Post; Iran's leader was killed in February. The country will finally bury him. - The Washington Post",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0LyLnFjrXgyRMXrzuLXw5HCd6rL5gZGbvVSXUobDMoJfbd6-6HRHmwBDMrdvPgXYQEIhiqewAFwpJIIwcsVgDWaKVuW7ibGFIGGx7VXi1LClLtzXq4TLxv_SDUB2UYaGmKylRA=="
+        },
+        {
+          "claim_text": "Tehran’s missile and drone counterstrikes targeted Israel and the Gulf states, U.S. military bases, and maritime traffic in the Strait of Hormuz, blocking the strategic chokepoint through which 20% of the world’s oil and liquified natural gas supplies typically pass.",
+          "verdict": "TRUE",
+          "reason": "Sources confirm Iran retaliated with missile and drone strikes against Israel, US bases, and Gulf states, and also closed the Strait of Hormuz following the initial US-Israel attacks. The Strait is widely cited as carrying around 20% of the world's oil and LNG.",
+          "source_title": "2026 Iran war - Wikipedia; Strait of Hormuz Closure 2026: What It Means for Your Supply Chain and Shipping Routes; 2026 Strait of Hormuz crisis - Wikipedia; Iran's War With Israel and the United States | Global Conflict Tracker; 2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict; Iran says it closed Strait of Hormuz, citing ceasefire violations - YouTube; Iran begins dayslong funeral for the late Supreme Leader Ayatollah Ali Khamenei, killed in war - The Washington Post; Crisis Timeline: The Strait of Hormuz War 2026; 2026 United States naval blockade of Iran - Wikipedia; 2026 Iran war ceasefire - Wikipedia",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0LyLnFjrXgyRMXrzuLXw5HCd6rL5gZGbvVSXUobDMoJfbd6-6HRHmwBDMrdvPgXYQEIhiqewAFwpJIIwcsVgDWaKVuW7ibGFIGGx7VXi1LClLtzXq4TLxv_SDUB2UYaGmKylRA=="
+        }
+      ],
+      "sources": [
+        {
+          "title": "2026 Iran war - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0LyLnFjrXgyRMXrzuLXw5HCd6rL5gZGbvVSXUobDMoJfbd6-6HRHmwBDMrdvPgXYQEIhiqewAFwpJIIwcsVgDWaKVuW7ibGFIGGx7VXi1LClLtzXq4TLxv_SDUB2UYaGmKylRA=="
+        },
+        {
+          "title": "Assassination of Ali Khamenei - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbYPSlpVfw1nt4yXvjaSM_stYf3tRdYD5frabXFMzOMh54Jh8qIg6l2oMJ6bWeIZdkPtdx3PseY1NShhXVFPURe-epm1CwfpJs3tsuRVt9LsDdtgQqPOrqQwiW3xtH6Ixfv2r6S206eOw7bdkb4qhqOsT4qLY=="
+        },
+        {
+          "title": "Ayatollah Ali Khamenei obituary - The Guardian",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWEjhSGXJibeWHU9iItC8RebpwQj3MmsXAKWpxvK4lPWF123bakZP2l_6pWs8PpjreW7sk-LDwvXddlecsx6W7Ev6GLtXrVX_QMru3Qc4GCPEoekPQdP-f9zrlUPgaWi0HV1kqT-x1-TVkzuvUqJgnQZqH_cuOOw83O0xuBxKpOblP2bGbIA4=="
+        },
+        {
+          "title": "Iran's supreme leader, Ayatollah Ali Khamenei, has been killed - WKAR.org",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEbyUBSMuYrKg8_Auu7UFSLIdkS-Cvir3hZZIguM0wLKQHZcUq7HELxyFB7gJzAtw5uihnM_N0SSMXTIZO4SQDRrZXno_huH8Qgt4nSA5wEpNRDt2gDLYw0nuxuC8DHWIhH3uN4QN64QrwG9AVk-j8YDzPhtGu3Xiag3AhRLZuNE09k9V8E8puKJzm7hXk3cNbUhTnJSA=="
+        },
+        {
+          "title": "Israel/US-Iran conflict 2026: Background and UK response - The House of Commons Library",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbYlRVVLN6Y_Qc-Z9azO1O9eJGAlQmuS3ncZ9YOvROpyLaS0KWm9poEQbYulpZmcwl8nDozfbMqu_hUbyDyjpxuPRWKAqFuPUDO_LQX-zCWhgXGyGqMTNpM5ydHJWFUuq9qtO_RRN-I-Q6rP8mEKU0QReFMt98DXZuEklU"
+        },
+        {
+          "title": "Strait of Hormuz Closure 2026: What It Means for Your Supply Chain and Shipping Routes",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7Y4yByjRNFZ6bIpSF4FTJTNn3e3crSXQdmTSVieTvWg6T_OhOnUMKs0qFgFEGWlynRSu6TvYzTnX46qFe9lR5lRA-0vDDbI0p2PkAwuug5MlXag0ApuWRmEI7y-830FtSVQvYVWgu6hCLOxLegSo="
+        },
+        {
+          "title": "2026 Strait of Hormuz crisis - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5SDilJs0vH6Rwzt0sZCN_XHMBTfNTRA1EvRRyQs0AFhvjZUdB0qYHxToE-TPHmGj2OM3F4PyepOaltPp6sMrRSbH6eAP2_8B3T_8OARdrpIBeOW9ujVMr42FucNgtUnIENWDj_X8NyOr4NJOsiZaJgUUS0Q=="
+        },
+        {
+          "title": "Iran's War With Israel and the United States | Global Conflict Tracker",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhRaXKXetEVIGWJDP6Pame3NXH5WVhruJ54SRoGuWEzCj404ut42tpBhT1xk1PaHBiriC5zPc6pj-wLcAMzQGSZRbR9QomBYfN-X3hu_ob5-bdyQS-YiOTezM5205hmNACWN8hKVCqlAcasNrmS_HqmQ3uNJzoNs8U6feJRypbO-ad33gXF_s"
+        },
+        {
+          "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEoSXTiwTX4EjfOjUxPM18_EW9jrr9fCG8Q6VyOSxX-f3xgyvghLAyp8rAAmg21DlG1yEXsyJoQ-gE8S2BjPJJjI67yzr-uk3ozcrgzoyAR2YKY1q2JVjoTmTN6mc2jOkofiHAo2thJQw=="
+        },
+        {
+          "title": "Iran says it closed Strait of Hormuz, citing ceasefire violations - YouTube",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETEae4b1U9NkKiwyUM-Er6Ghy22hSBUKpkufcwjZ0QCwvfAthzf4k6yjc7-DWw8tTCBVfR2JEx92uWyWDxl7SpK_CpQNyuS-SXlFYRuHgbn9HLMaiMlfpJXQSQFFe2-tLRfO_5dQ=="
+        },
+        {
+          "title": "Iran begins dayslong funeral for the late Supreme Leader Ayatollah Ali Khamenei, killed in war - The Washington Post",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkfQS9ZbBnkpNzeMQJNKq4ONRXS_sp-MdNnP2wBmTfwh_2WOdySce6meCAAOfPINd7Ze9BPYdyqAHGdeqgRnjwafNah2c1CWD3tx8q7QQAlHLlTIAEqPqn3Fjx6U2ntRuKzAGAUDqm2uDAVjqx4yDHCd4tFMkn73qRo213_TxwJLtnyMKBOp0IkeamgItfYNpgwlZphuYjODawjWkxwu7holAyqWsoevDc3u0Js6kS0FwdtLtLT-Q4ogPJPWnpJa3gYzcFEIaGbir68jL7AZMcAS0="
+        },
+        {
+          "title": "Crisis Timeline: The Strait of Hormuz War 2026",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOd__xGYF31zN6UC3Zt8PpfG116tGRaKBMr5BT_Yw7euts5sz14MS4MWDqAmtABcHYbYO8yJfGig1XW_vbDOcqvRNTGey06DVDYhQWXDKkOZzlMh3vt0WlfAD4XKV8mRRTuKxUtYIeyi_H"
+        },
+        {
+          "title": "Iran's leader was killed in February. The country will finally bury him. - The Washington Post",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxE0sjiSvenvmr3rO6AbXIj4d5rAwXGYJ9lsURdoExbA5eQAmFurQ1zFxWOgZ1WpMJeUoY-8X4zG8jbXgy7RezQ_l4JqvV-pzzn7_X12HOgN0N-olkFAX1NbHPfVbnQv9LeaSUENTN6NJEaFAsKOVZnsnBes3eqV7yfsdGaUWTnh15HYa5AT90FMEVvyKh2jfBpauQhVoKpB4B8P3MNSwgV06DmKKcHLc2po="
+        },
+        {
+          "title": "2026 United States naval blockade of Iran - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6w-qsT5BnjV9N5NOdjantWFgp_OrEtz3QMkJB-20rrVDJItWKJUDABy5ZW2rw3CktlxxH8v5tjkCzbXYRdW2KGRTsDGlgBFp_OFatsStsfZL-_RsweG1WwcfsuLUZlXMpEtZAAu2iYnU6ML7qQl_eSWaYQEjQhnUlgnhGuabYFJM="
+        },
+        {
+          "title": "2026 Iran war ceasefire - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNesoCqy7ZPsVnt2gXEqqgURSTGcAj751or5ZbSAEwma8igcBMJ9C5-XK1rEZrb5Ylo1Y0vY5xqJRcTV8mLrXV87Thfy3WNUxunQaBitHKsP6u-RxllwdNx2Ad3hcfoXWf9t7_geFNKTDL6pl9sO4="
+        }
+      ],
+      "id": "22ae6167-b52e-4486-89a6-1fbe56666c47",
+      "timestamp": "2026-07-04T11:14:25.372Z",
+      "content_snippet": "[URL: https://www.brookings.edu/collection/blowback-how-the-iran-war-may-change-the-world/] Blowback: How the Iran war may change the world | Brookings\n\nContent:\nBlowback: ...",
+      "original_input": "https://www.brookings.edu/collection/blowback-how-the-iran-war-may-change-the-world/",
+      "is_url": true
+    },
+    {
+      "label": "REAL",
+      "confidence": 95,
+      "summary": "This CBS News report, dated July 4, 2026, details the commencement of funeral ceremonies for Iran's slain Supreme Leader Ayatollah Ali Khamenei, allegedly killed in U.S.-Israeli strikes in February 2026, and covers related political developments including U.S.-Iran negotiations and the succession of Mojtaba Khamenei.",
+      "explanation": "The news content is consistent with multiple grounding sources (Wikipedia, Atlantic Council, NDTV, CBS News, Radio Free Europe, The Guardian, Britannica) that describe the death of Ayatollah Ali Khamenei on February 28, 2026, his subsequent funeral ceremonies beginning on July 4, 2026, and the succession of his son, Mojtaba Khamenei, as Supreme Leader. The events and statements reported align with the timeline established by these sources within the simulated future context of July 4, 2026.",
+      "claims": [
+        {
+          "claim_text": "Iran on Saturday officially began several days of public funeral ceremonies for slain Supreme Leader Ayatollah Ali Khamenei.",
+          "verdict": "TRUE",
+          "reason": "Multiple credible sources from the simulated 2026 timeframe confirm that Ayatollah Ali Khamenei was killed on February 28, 2026, and his funeral ceremonies officially began on July 4, 2026.",
+          "source_title": "Ayatollah Ali Khamenei's Funeral Begins In Iran - NDTV",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCfyQCdCK7QaDaaWPvNdqbePRi2b9ZLV5Nk9Zo-63hjOYwYyWFUoiTtORIOIxldmnxKXteoItwAem2IkGOeG2aGRWXds-C_dWvG_dJ3dX8YEaAgOnOMNC2k-g4FMU2qqUTxMEgUqpe1WIuTHUhAe7nQXcQp5Ent1C8YYZFISEC_bIrAZIX2RxKrFz57sRgXyX5Vhl_JiAPHHWj_VKLoi6JqquYGEOC6Rn2-ZD3bcybFDIaP6HPlI__W4gplQ=="
+        },
+        {
+          "claim_text": "Khamenei was killed in U.S.-Israeli strikes on Feb. 28, and his funeral is to last from July 4 until July 9.",
+          "verdict": "TRUE",
+          "reason": "Numerous sources corroborate that Ayatollah Ali Khamenei was assassinated in U.S.-Israeli strikes on February 28, 2026, and his funeral events were scheduled from July 4 to July 9, 2026.",
+          "source_title": "Assassination of Ali Khamenei - Wikipedia",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHRbnQTZitf79nwiRGUhH0cANJgmAnX90fcx-LIFDSNqZddnTXC91c7GIMCLzjDzmzeORleNes2L4WrBr9KvdaQ7pDPMnsNbvh3LPKjmfz3Bpa-vp4fUy2MGe63HDGueWgz7cf83UUfDosVmDs-R77dBJmoNm7"
+        },
+        {
+          "claim_text": "President Trump said he gave Iran 'a week off' for the funeral of slain Supreme Leader Ali Khamenei in a speech on the eve of July Fourth celebrations.",
+          "verdict": "TRUE",
+          "reason": "The provided news content from CBS News directly quotes President Trump making this statement. This aligns with other search results indicating Trump's presidency in 2026 and his involvement in the U.S.-Iran conflict.",
+          "source_title": "U.S.-Iran Latest: Mourners chant for revenge as Iran begins dayslong funeral of slain supreme leader - CBS News",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExTZbQ9zspD4CdjDQ5xnCXBrU0copC18tEPJ1hNxCiu70Xvd4TkEsSpVT3luFeUqmO36mIdivYnFaQ7aef8OrZEmtjis_ltYUojUsApRHt3Dz-LEkkUNaHlcZdTtjHa3P-EWiy82FxK9U2cpBzRxdyA3uNj12c1xI6m2yNehTw60pJkelQKuDCuxKpxnBoD3uJDAAJnxxk"
+        },
+        {
+          "claim_text": "Mojtaba Khamenei, who was named supreme leader a week after the killing of his father but has yet to appear in public.",
+          "verdict": "TRUE",
+          "reason": "Several sources confirm Mojtaba Khamenei's succession as the third Supreme Leader of Iran in March 2026 following his father's death. The news content's mention of his non-appearance is consistent with details in Wikipedia suggesting he was injured or kept a low profile after the succession.",
+          "source_title": "Mojtaba Khamenei - Wikipedia",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFT0cqRlR5lrKDI2_MVDnezLxP5h5AjrN1Y2hqP9cgWT0EVmDN5lLUKSAYdVC9kOT4WK3x-JXu0K7JcYA3sLBl9qsfOLAdCBRFuYgbxWHaAJDXR-ayOUGgl-TjxZ_hl5q6VjTwToZEtkYM=="
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ali Khamenei - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaNFieUhSnQ89EwAmah7CABNjgLM3GuGg-Imtvm01Kzi-FMEIc6N4B7lzSAnuTCrC-SB87nczU6P1j_2kKhDIPN9afXDBm6ZM9TIr6ti7_cNmpj235drX_EV1b625Bx3WKYam0PA=="
+        },
+        {
+          "title": "Mojtaba Khamenei - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFT0cqRlR5lrKDI2_MVDnezLxP5h5AjrN1Y2hqP9cgWT0EVmDN5lLUKSAYdVC9kOT4WK3x-JXu0K7JcYA3sLBl9qsfOLAdCBRFuYgbxWHaAJDXR-ayOUGgl-TjxZ_hl5q6VjTwToZEtkYM=="
+        },
+        {
+          "title": "Iran's supreme leader is dead. Here's what it means. - Atlantic Council",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvksYcJhDCtmrzwiH41jr4Fmot4M8Aa9lKikAkUaOXKs7k2eN6hMpcSZ3_plJnsepHU4aJSFaaQICIxLdeY1CNnkHwh5Fu5ovE1yc2oT3jVYpU1UbDUgmo_ydlTaG9RjMDj5zaT0929KhoLtaSDfHV_HDE4jfibKysaGyYpIFL4eckCL-nKgyDPmCno3oNZlNNDaGh8LW4_9AAIAv8maj-G8RDlcx1XT4="
+        },
+        {
+          "title": "Supreme leader of Iran | Powers, How Chosen, Mojtaba Khamenei, Death, & Difference from President | Britannica",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrSgBwYT1Gly4wLoVQTrCGv7jAZLZIU62fllDs7DVVkwYkmJMjfKBtsTBsGYfYf7OU2R6JkIG63_WFGdLydD0q0VfVN1qSCJuWdh-fndWw48SK5Agybp0OEsFm2ajqLTwhQ85KPoBUWytqw1b98p1MWXY="
+        },
+        {
+          "title": "Supreme Leader of Iran - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnxIXiq-YDcXdZumva5NpX8drSG43aDxZz7mL6xa3nKci30Bwp3iGWflhxEao99po3PbCgV96AwBMhqrQB3EGqoWn7j-tRSRJLtOHZQ61weJR9RqVKQK7YNI-olFncICnF1zZWHCMyJoYlCPTEBMM=="
+        },
+        {
+          "title": "Ayatollah Ali Khamenei Funeral News Updates: Ayatollah Ali Khamenei's Funeral Begins In Iran - NDTV",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCfyQCdCK7QaDaaWPvNdqbePRi2b9ZLV5Nk9Zo-63hjOYwYyWFUoiTtORIOIxldmnxKXteoItwAem2IkGOeG2aGRWXds-C_dWvG_dJ3dX8YEaAgOnOMNC2k-g4FMU2qqUTxMEgUqpe1WIuTHUhAe7nQXcQp5Ent1C8YYZFISEC_bIrAZIX2RxKrFz57sRgXyX5Vhl_JiAPHHWj_VKLoi6JqquYGEOC6Rn2-ZD3bcybFDIaP6HPlI__W4gplQ=="
+        },
+        {
+          "title": "U.S.-Iran Latest: Mourners chant for revenge as Iran begins dayslong funeral of slain supreme leader - CBS News",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExTZbQ9zspD4CdjDQ5xnCXBrU0copC18tEPJ1hNxCiu70Xvd4TkEsSpVT3luFeUqmO36mIdivYnFaQ7aef8OrZEmtjis_ltYUojUsApRHt3Dz-LEkkUNaHlcZdTtjHa3P-EWiy82FxK9U2cpBzRxdyA3uNj12c1xI6m2yNehTw60pJkelQKuDCuxKpxnBoD3uJDAAJnxxk"
+        },
+        {
+          "title": "Iran names new supreme leader, Mojtaba Khamenei, Iranian state media reports - CBS News",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfb7qPcmx3TBZ5LpLW7eru_3GumA66fuFxsZrhVF4QYlOxuwItx3ailN0LTofnl_tCliXMmptjQOi-eMyDDDFkAO7qKQL3_DYVYjgW6qi5vjb9q8bINbhoOqhk_1eMLb9CFFj-x2hX1p5V_flEoDt5bljWUzPKBLfKH1L0PIjtZJ8=="
+        },
+        {
+          "title": "Iranian IRGC Chief Makes First Public Appearance Since War Began - Radio Free Europe",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYsqDpc31KtpY1FGOUqZRN6itovEi6WRPmU3THJWiUL2EdXvv5z__ZU8djtc_Aa4UWrP69t-efb-W8KRvn_ArucKzuAbr3-aR9ixnZrOQDOp7fztZF8nsQLk6J7qiUfjp21IFfKycVoUYXlhPaoVE8YoHQhojtlYSFGr5Pr15ff8HrP49bGxKMwMMk8A=="
+        },
+        {
+          "title": "Ayatollah Ali Khamenei obituary - The Guardian",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMlY25CP4YugBaP-F2YGVTTTzOYBW1LwrYK8rmk4ubUXYunN2TI83olIO-5YJx9pzDW7QUJDAe6Svy1GfUOo2PiBlXWiie2AFHftVUUYxzqEvtEuyJnCgfOSwasd6Sb0atBUkGmfbEJSdEawxua8wDxnMowamh_S9GKfPfG3hN_u-0Jftr3MjY"
+        },
+        {
+          "title": "Ali Khamenei's son Mojtaba chosen as Iran's new supreme leader - The Guardian",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyZAgKl66KDNcw8T3koP_2AduelaDapaOO_8p3WO5Cy7fdfqaz-2v_KEDR7wSiEMMBfqo1ZMh59ehSHJJ71g5S1uTLZowkvswVvUZ_4qTmCL7k6-MNZDDaEORfSe8H-9n5F2FWq0X31XZ2Qm646U5tMje2-yM4Ns00JCEkeCZINUyhg4k9z7lkIWl5Qq_C0Bo0CsYiSSK6lqay0GjUk8wHB8Vyl_0="
+        },
+        {
+          "title": "Iran's foreign minister says supreme leader is still alive 'as far as I know' - YouTube",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFzUtFhq9x6B692RK0DaCurP8Vptc1GSz7POJN3PZy5sdMtn-NyhEqbTH6Me3eQw1pRlRRg-0R39l3I49KCUXjvoBW3ZyLt6YG5moboXy8oywLmrk8uaZFZyHKedtvHSoH7oqWMgA="
+        },
+        {
+          "title": "Iranian state media confirms death of Ayatollah Ali Khamenei - YouTube",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkShshKkeWLgwEHZwDdkFHzO8Y1qm11uGPnxCbHqKh64SR_E9PovfmXAnBPPzDiAZTXtiGBc1QbZdS8Smv_LSfJbaxHrbAd0TdoxthdiY-C8jDMRfpxBNXZ89ncXcAlnacBWMtiws="
+        },
+        {
+          "title": "Assassination of Ali Khamenei - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHRbnQTZitf79nwiRGUhH0cANJgmAnX90fcx-LIFDSNqZddnTXC91c7GIMCLzjDzmzeORleNes2L4WrBr9KvdaQ7pDPMnsNbvh3LPKjmfz3Bpa-vp4fUy2MGe63HDGueWgz7cf83UUfDosVmDs-R77dBJmoNm7"
+        }
+      ],
+      "id": "9249bcde-4983-453b-b894-7912f92528cf",
+      "timestamp": "2026-07-04T11:05:40.137Z",
+      "content_snippet": "[URL: https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/] U.S.-Iran Latest: Mourners chant for revenge as Iran begins dayslong funeral of ...",
+      "original_input": "https://www.cbsnews.com/live-updates/us-iran-war-trump-negotiations-pause-ayatollah-funeral/",
+      "is_url": true
+    },
+    {
+      "label": "FAKE",
+      "confidence": 100,
+      "summary": "This Al Jazeera article, dated July 2, 2026, presents a fabricated geopolitical scenario including a hypothetical US-Israel war on Iran and a second Donald Trump presidency, treating these events as current news.",
+      "explanation": "The news content reports a series of major global events, such as a US-Israel war on Iran breaking out in February 2026, Donald Trump serving a second presidency with JD Vance as Vice President starting in 2025, and an Israeli bombing of Doha in 2025. However, as of the actual current date (July 4, 2026), these events have not taken place in the real world. The article constructs a hypothetical future timeline and presents it as genuine news.",
+      "claims": [
+        {
+          "claim_text": "Gulf countries are likely to accelerate the push to diversify their security partnerships after the United States-Israel war on Iran, analysts say, as the region grapples with the lasting impact of the conflict.",
+          "verdict": "FALSE",
+          "reason": "As of the current date (July 4, 2026), no 'United States-Israel war on Iran' that broke out on February 28, 2026, or any other date in early 2026, has occurred in the real world. The information returned by the search tool describes a hypothetical 2026 Iran War scenario, not a factual event in our current reality.",
+          "source_title": "2026 Iran war - Wikipedia",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELMC4aTcUEhe9CYRzaZOmA7j0l2tdAyINmX8uBLi-EEHh5tBwOcoHLyOnNYQ8vXr0nrFby97TomvswOIxiuvSqjUviG6LPiQkJyEogjQPZmg5rDucYiXWj8sbcXZXpGFtnsmtLW80"
+        },
+        {
+          "claim_text": "President Donald Trump said he was “very unhappy” with the strikes on Qatar... Last year, Israel bombed the Qatari capital Doha in an attempt to kill Hamas leaders during US-backed Gaza ceasefire mediations.",
+          "verdict": "FALSE",
+          "reason": "As of the current date (July 4, 2026), Donald Trump is not the President of the United States, nor did Israel bomb Doha in September 2025 in the real world. The search results refer to a hypothetical second Trump presidency starting in 2025 and a hypothetical Israeli attack on Doha in September 2025, which are not real events.",
+          "source_title": "Donald Trump's second presidency - Wikipedia",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSXoTA0iklybp7YbliZI_e1cnVkXwxeVLCvD2abL-ZKS0E8lD1RpIUiOX07EDq8D0EukLEfOvXPulH3fK7ShCGDeTZxy-yy3U2D6uh0Piz6cIThIJ4kuQAGZ-pxdG8YhfipBsnTpW7XwVDquzP82cCFDPrujRbWtXeCQ=="
+        },
+        {
+          "claim_text": "US Vice President JD Vance alluded to that strategy in a recent interview with UnHerd, underscoring that Gulf countries have welcomed the MoU between Washington and Tehran.",
+          "verdict": "FALSE",
+          "reason": "As of the current date (July 4, 2026), JD Vance is not the Vice President of the United States in the real world. The search results refer to a hypothetical scenario where he assumed office as Vice President in January 2025, which is not a real event.",
+          "source_title": "JD Vance - Wikipedia",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_0_JZuqWHNePQeyMVZ8p05f_UV5-xPg8Tnz63JopzQ6bheOg338MXRykERVZcne76AE5Xfdo4oan40ipYyZIKWwWoO7C8YwwU3jHuLR48QrTIQ7KVPWqIMg_JxwIs50qw"
+        }
+      ],
+      "sources": [
+        {
+          "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFQEVVJ62DSX6xBVbLkhyofUpV3OtUvX1t4pEU22VDyHi6twTRV4ODt7xGAHQKSXqAVPY3EV-wxRB415OEVlxWNPPCFvN8ZYyWrGnNbSYL-ccXcAfTvLaBD0E7ydFZQLrqPU-GYYYyht0="
+        },
+        {
+          "title": "2026 Iran war - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELMC4aTcUEhe9CYRzaZOmA7j0l2tdAyINmX8uBLi-EEHh5tBwOcoHLyOnNYQ8vXr0nrFby97TomvswOIxiuvSqjUviG6LPiQkJyEogjQPZmg5rDucYiXWj8sbcXZXpGFtnsmtLW80"
+        },
+        {
+          "title": "Israel's Attack on Qatar and the End of Diplomacy - Arab Center Washington DC",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFONWMINOY-6aCEejBzYHGXfffm4PpGH6e3sY8wcGRWLkPWp5LvZgkEuRWGwojKkqFeX8bct7CTa1hS02W9NTZGCyIZl3KIXnH5XC2dYJlgSIHTgR4jLzQpauEHpR5f9iXb19MdSoMzrt6oPMs-__4KpP88itSakEpR8zv57FCryDHF1SPLVhqEOEfOfQW0"
+        },
+        {
+          "title": "2026 Strait of Hormuz crisis - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoGUdAfl1XCiHAJotqYEakA8k8FM1MEcfpC8M9OytTJHDDbStZvTW3SA8IQUuOdabJ0kvdZ6ILSsR0DdkzZe7BRYQdMwJmRK5hdbJ1dG3CGkRBXangD0OCW0DO1YktA0_KcFEpW-v-8pAeTOrqFOAz96zBGkI="
+        },
+        {
+          "title": "Israel/US-Iran conflict 2026: Background and UK response - The House of Commons Library",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaOf9n8fDZbFCi7of_Ls0EIY-qXPNUeHSXMZPIZBzXBi5A8kpdgGf4e7QNSWEM72DSRsiOg7MINZqagk3V398fs0WpxUL5YKp9qA4j3Kr9wjp2waY3HrogmRYzhuz6_n-dWLEfhPPqDW40RrPfTPiZwgCqmfwvped3LhRYBQ=="
+        },
+        {
+          "title": "Israel attacks Hamas leadership in Qatar: What we know - Al Jazeera",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhm9WKLqdF9kfK8eTv4bsexTyILul4xccqinnG2wkj9zeN-HeDYxJBY4qHfBRVW_bwKadGoCKikYEJNRkwq6g1uzPQSGo-W0LUzPtjI075L1RQwg8JJp0kLrUjdBys1vG4vZvk9NkQpom5mOOjrkqYlFY7m7_lxYn5AoHOQwPMHrMm6qdNibm5-Wis86TjdA2ZbjQHN97A"
+        },
+        {
+          "title": "Israeli strike targeting Hamas in Qatar 'does not advance Israel or America's goals,' Trump says - The Washington Post",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZyzH-Kmn1CwTS0kyChdhiZ_mULtVU-xDzjkcPIdtyfIcKI1DE8QxH7FbWXxBF4qRJALVCNy9GgVrX6AAHvpHcBksUqnl7sDINXib64rOo4QLEmyjt8iutaK9E09B-J6qsNORROlLLku2bccfqJbui719-CO6Oavl05T5uhL_amyUemlc6IXraj7vt2Gw="
+        },
+        {
+          "title": "Strait of Hormuz Closure 2026: What It Means for Your Supply Chain and Shipping Routes",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQBX4SXYkyMNl8uE0M654CHZZ_Z8M1CuSEZHsK46M4TAqKDk1He9DJj5cFOwmZH5IlKHMAYK6OwHUJyzc7feEQ9H03oCed4-uSMcwTtH-BJuv71wAUE66TYoMIou_6JI_v2Fx0EpYEIs7LchuCZtfI="
+        },
+        {
+          "title": "Israel's Attack on Qatar and the Failure of GCC Defense Cooperation",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHev5PQ0Ekf120qLdovqI6hyHazALKqlOBoLlUrg9iDfMhwRGBOvkl35DhZim8U1rPnB3ngdetbFIFmcJcpd77Yelr4FFERXcNr93mkapaoe_iGQ5UIoerJBX7FKHhHkpI3PDU1hXN78fLmiC-bN_RXDdOYih0IDxpheTPt3mbs8BRQ8-b3PccJjwjScRPplo7LQhCsmhhAMFN5Xcbxs_PU"
+        },
+        {
+          "title": "The U.S.-Iran Memorandum of Understanding: Prospective Sanctions Relief, Commercial Opportunities, and Legal Risks - Gibson Dunn",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHD_zewXzeBWVkeiG9ZvUghZbG_UXqMkxwI86eL75m33HGWts_JkSTJqXi3zD7vYDZe82q7-MlL3GpGs1SIsPkyrlkTYCo_ErXnP7YTxgkPR4_I4tFqoVlQLAMQD8enejkY0KpSpM3JK5nvOrMz-2d3bPI86gcRlCi2wQ28zCcwIRqfqeiO50ep6Zz5QCbYM5FTSg7UlOxdvPU1m2WKNwMLkKpSK1i0j2ux3IZXp4N3PEkfJwBOQuIQrztQs2JGKgWV"
+        },
+        {
+          "title": "The Closure of the Strait of Hormuz by Iran: Considerations over the Law of the Sea and Law of Naval Warfare - Opinio Juris",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVgkcfpPLWCNhngfwiHJDtzsaF2Zqhf3ysyWyCuK-Lm7O03xK2m91_kcYXd3jP_f3DXJnIlfVTXCowf5avQQDfqBFWgbRUOuQO9SfLjox6B_GiAZjUxJTcU8gnYmwHPZtFxRLhZUAKhNAOJDiuNLylxZNls65vQAK3TuAYhvHsNiLuikaQJAz52YhNbFG87jYP8QCnqjx3Ufx_-szOcx6KQ5CwWzOdYplJqYN1vYV3pOWF_2oliogc9kmop8E9UDy9EK0J0cmEVNGi"
+        },
+        {
+          "title": "JD Vance | Hillbilly Elegy, Family, Education, Donald Trump, & Faith | Britannica",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7BUbjvntmdvjOT8Udr2ZCLpGc5LBqne_NoEdwMrwTKNPdvx7qRp_9O7gq8EnB6vcB5wcfthXqn8ka__VpNaBHPCaoQKFLVd2T1SXKu6-YIZm6tN6greg45amB2bF8wEUm9vX72W71oA=="
+        },
+        {
+          "title": "2026 United States naval blockade of Iran - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQ_K5Dydunts_s5eETrcV8bOlRwHTAh8FRSjm4qIBYZGMK1ygU0lG62RxaNK2kGnkakq4qyavMDqItnlYxTfq6Xdd3u4sufnCKLTrCnwySW10AH-PJ0AGKEui70INxc5Ds6gjTCdice440gW7wT01LHnR42iUuNYWsxuES8X2GkqKP"
+        },
+        {
+          "title": "Israel Strikes Hamas in Qatar - CSIS",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGta7Pn9HKD7QNx1zy5QRKhObUC-xQmt84Q_cxQtTIOZWkzvI6izTcV679G_2_b_tQ-eALOl1jQ1X2TkUGgN-1_YZTIzKBf4kLva-JQ-QQ0aCJe6fnTbmEcRR5kJlSFkCHHqLF2JWOyEEWnoVEuW5MRzxve"
+        },
+        {
+          "title": "The U.S.-Iran MoU: A Lopsided Arrangement - Iran Watch",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZyf42doWELXv5JukxCpO1EsHdFr_ch5khlw95lbyohYYQKCslURuO20wu4DduWBBwt5oybS_QLGIDDxz3Rd8g8sgLMKcHO800zkEX90k9Qqpg6nnLmnUp9zAS13QNGHw7sRmVxBTY5x2KDm6LZ3Rh4VnfIesVaX6S-mzfoGx2Calf_lttty4VnN4FQLz_g1D_8vzY"
+        },
+        {
+          "title": "The US-Iran Memorandum of Understanding Opens the Door to Major Regional Transformations",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEE4dL7JHH0UTjOQeFdwirF36dqVaEvKc9Z-0-4NkZ2D45ffdyeK3nOgm1qHE9REiqMVczpPG3WedHftcg1Ia4vIqhb0luuqBkdy6uadMPcb2nOLSgUMLWyVVSWf_TJgHhhRJUio9bVY4hBZ77JJ6Eyw2h5aJp75M6yhP9ebk_oZ9HAALyrzkzNOdnQJHvoWCNwNj_E_Gjboky1xoyaGiWk81R4RTJ4vr-tGgDNdvJpOLTqAhQ="
+        },
+        {
+          "title": "Iran's War With Israel and the United States | Global Conflict Tracker",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGh0zUQlKRLaD6Z7lEAHBm3Wy8GR2BcR2IP9rVZB09YiPTg6UORk3JRWlRtbIHB7mz4gS2Jm2p95OhfirKa2Mdo9j3E4XN8fK1I8upRIONa72i37gYsGcaklQ80OX07P1rF6Ev04sGLkEErRPvuOHLpA2TjtDNEUy9tXG49eGmfAmNRqRemONaBshsC-Uqm6zEti72G5sZXQauMG0="
+        },
+        {
+          "title": "Iran says it closed Strait of Hormuz, citing ceasefire violations - YouTube",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGzXLLC-8ZO8k6MVF4pGCsSkXs_Yn7enlb5hoDlks800FfAcEJFr4OonE_Gj_8v8oxebfpiKJ9Vth7mYyU0ZrUMPmrzjLJ-ByFgj6-Nvtx50GzwdqkEZabW638E--XN-ADDxavL-w="
+        },
+        {
+          "title": "Vice President JD Vance - The White House",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjXRuSerOfRUWoUd-TD3cJGDGlW_vt_rHxOihsnOI0Eo5BkVJJFBxi9Sma3OPTog9dyvN-0pB9r2ysmTsQMv751JKqzgxYrILptb-EXG1uaACgqIHzDNoUd5WPtJD_y_wcLXGldcr7C5a1uJmGSw=="
+        },
+        {
+          "title": "2026 Iran war ceasefire - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHr3lzVPuLhXhRBFLdGOaDZ2HGx-1advEvXbVdAhSfOq31Mez2PzLN0enYa5SPPYnHsisNwGn_0H7KZZ5Cp4S5QXPrcGjhZYHk5dv_UUQQLJGU2w1QXkv4BsorGKTLXziYGgPA3s29ELnYxZVD7bACV"
+        },
+        {
+          "title": "Donald Trump's executive orders and actions, 2025-2026 - Ballotpedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsYM9kfSeOsbNfg_dkLrAiKmHOTj1UwoHnCOKtSfABciZCpbaPx7-axN708YOhCNelCC_ZCAAQ_GEKpNraTM4kO1tpel2Y3HqwrmH0vhkHQnBtxsl8YOcRn7EXSNR_6mIOI6HqPNiweCG362WL7VuqTDSqI8wWpR9IyLkjcwszg3H7vtbyjio-ldyh"
+        },
+        {
+          "title": "Donald Trump's Cabinet, 2025-2026 - Ballotpedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPJYGK_aElsNqqTBv1l81xs_JRg37mhK_D8R3yd1KEGQWg2ndiQWuHIB6iBL565ip_zwBfzSchSRjRDvZkmi5hCbcKIV6L-3Bdbdyz32uOrMFJiOYRL9hauohCeiwqi5RHmc03jIB4CK2L0adJzPE-UAvu3MRJ"
+        },
+        {
+          "title": "Donald Trump - Wikipedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiWFEqOS_b3QRWOf5tG1ukT5c4DMJABBwyo9dgjVvE5WOvr1U2m8qE1PaD5GUVpya3Y031H1oTtu5zyzeoAFIpUEAyUoexkt7TZeNPgJa1mKnBIQKRHVH3g99qBFOYSs0p6-6D8A=="
+        },
+        {
+          "title": "President Donald J. Trump - The White House",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFm-JJJ9pL7e96SwIM_qYsHWq0wRbT6LdG0fUUq3102AwtpzrkuFlQzWp5VmG6RFXFs9QTppN8vVbIE0F8D7qxu8kUrOs7Q8A9-bhBJgnS5PgDCMGJcviQvPHAYqNDmUE0OKea08SDmPmQ6ByGxElA3HTdRZg=="
+        },
+        {
+          "title": "J.D. Vance - Ballotpedia",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFG4of5ZnMiT7ebUM-nJQQSc8ZsgfnEqrb1zX5GmUcBLoPFqSt5ua8UflDhFFCeYF_wZN3dfeRrTHysUiLD6gmXdTFBTlW0nZrlFJEnej3lUI_2UOiQE0lCQLOHnjI="
+        },
+        {
+          "title": "Vice President JD Vance Named Commencement Speaker for U.S. Air Force Academy Class of 2026 Graduation",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHop11VIMV5z6KJ1A4qDug7escmFYqtDB8aw1r70OsO57ODIMDE3bixGEegCiJ7WWxyZ_TX98ZCU2D92rW6EzodwYBq0guB-L5V8eMV97j5_9yoCUW5f1xmy49FrfevTK9sXUXLETGTVTViDfyw5Ix1_t9AyHF4UauAhltauLBnmA621d7XY-iPFNd_MKHdnAgOILKm-_Nkesr7b5fsakYowfas23CO_pBLb66qyC6lGkuUgm7d_g-A1hpl_J4cwSh3PltogEjKxpIUFam_FcwFSWZLA35Y7w-Qe6iIe7uFStSstE1PDtJSMDo-xGWQ87zo"
+        }
+      ],
+      "id": "7d08c8e4-7599-4582-975b-0b3ce77c8d6c",
+      "timestamp": "2026-07-04T11:02:28.116Z",
+      "content_snippet": "[URL: https://www.aljazeera.com/news/2026/7/2/how-us-iran-war-may-push-gulf-countries-to-diversify-security-alliances] How US-Iran war may push Gulf countries to ‘diversify’ security alliances | US-I...",
+      "original_input": "https://www.aljazeera.com/news/2026/7/2/how-us-iran-war-may-push-gulf-countries-to-diversify-security-alliances",
+      "is_url": true
+    },
+    {
+      "label": "REAL",
+      "confidence": 100,
+      "summary": "The news content accurately reports that 2023 was the hottest year on record globally, significantly surpassing previous temperatures, a fact confirmed by major climate science organizations, and scientists warn this trend will continue.",
+      "explanation": "The claims within the news content are fully substantiated by multiple reputable climate agencies, including NASA and NOAA. Their independent analyses consistently confirm 2023 as the warmest year on record by a notable margin, and their scientists explicitly state that this warming trend is expected to persist.",
+      "claims": [
+        {
+          "claim_text": "The global average temperature in 2023 was the highest on record.",
+          "verdict": "TRUE",
+          "reason": "NOAA's National Centers for Environmental Information (NCEI) confirmed that Earth's average land and ocean surface temperature in 2023 was the highest in its 1850-2023 climate record. NASA's independent analysis also confirms 2023 as the warmest year on record.",
+          "source_title": "2023 was the world's warmest year on record, by far - NOAA",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf90K8qE08Oia42eUzSsxfoL_ul-vTdliBRELBmkaWszJ_rFFc2cWQxCEEloMhxGJfV0CwBtK-_xicwhhmmBJvBrUfDQE6r7Bzd2MH1okicJaxyUx95TN6yJmyC1dXn5bWd6Q_ZJmJ88pM_1mCMKivvzc1HRtsHoZeYEiKDJEkRJ4="
+        },
+        {
+          "claim_text": "surpassing previous records by a significant margin.",
+          "verdict": "TRUE",
+          "reason": "NOAA reported that 2023 beat the next warmest year, 2016, by a record-setting margin of 0.27 of a degree F (0.15 of a degree C).",
+          "source_title": "2023 was the world's warmest year on record, by far - NOAA",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf90K8qE08Oia42eUzSsxfoL_ul-vTdliBRELBmkaWszJ_rFFc2cWQxCEEloMhxGJfV0CwBtK-_xicwhhmmBJvBrUfDQE6r7Bzd2MH1okicJaxyUx95TN6yJmyC1dXn5bWd6Q_ZJmJ88pM_1mCMKivvzc1HRtsHoZeYEiKDJEkRJ4="
+        },
+        {
+          "claim_text": "according to multiple climate agencies including NASA and NOAA.",
+          "verdict": "TRUE",
+          "reason": "Both NASA and NOAA independently conducted analyses and reported on the record-breaking global temperatures in 2023. Other organizations like Copernicus Climate Change Service and the UK Met Office also provided similar conclusions.",
+          "source_title": "NASA Analysis Confirms 2023 as Warmest Year on Record",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpaiK8Lko4C_IbViz5mcFcFVzIwZ3kvCWwI2nS15s3SXrRYm3XyqD6aonXgaOR7voaLPE-Pdu2A7SxkqjjR8tlA8WHHJJ_5d6L-52M7jpbzswEKsehjT1xw-E8nfdtpbPp8wrCPPTzlbRvruH9Z9-1JtECCU1TbCLx7i3DjTWJZ4vsLGbINfQVvt4uP-scVdVbbw=="
+        },
+        {
+          "claim_text": "Scientists warn this trend will continue.",
+          "verdict": "TRUE",
+          "reason": "NOAA Chief Scientist Dr. Sarah Kapnick stated that records will continue to be broken and extreme events will grow until emissions go to zero. NASA also states that scientists predict global temperature increases from human-made greenhouse gases will continue.",
+          "source_title": "2023 was the world's warmest year on record, by far - NOAA",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf90K8qE08Oia42eUzSsxfoL_ul-vTdliBRELBmkaWszJ_rFFc2cWQxCEEloMhxGJfV0CwBtK-_xicwhhmmBJvBrUfDQE6r7Bzd2MH1okicJaxyUx95TN6yJmyC1dXn5bWd6Q_ZJmJ88pM_1mCMKivvzc1HRtsHoZeYEiKDJEkRJ4="
+        }
+      ],
+      "sources": [
+        {
+          "title": "2023 was the world's warmest year on record, by far - NOAA",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGf90K8qE08Oia42eUzSsxfoL_ul-vTdliBRELBmkaWszJ_rFFc2cWQxCEEloMhxGJfV0CwBtK-_xicwhhmmBJvBrUfDQE6r7Bzd2MH1okicJaxyUx95TN6yJmyC1dXn5bWd6Q_ZJmJ88pM_1mCMKivvzc1HRtsHoZeYEiKDJEkRJ4="
+        },
+        {
+          "title": "NASA Analysis Confirms 2023 as Warmest Year on Record",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpaiK8Lko4C_IbViz5mcFcFVzIwZ3kvCWwI2nS15s3SXrRYm3XyqD6aonXgaOR7voaLPE-Pdu2A7SxkqjjR8tlA8WHHJJ_5d6L-52M7jpbzswEKsehjT1xw-E8nfdtpbPp8wrCPPTzlbRvruH9Z9-1JtECCU1TbCLx7i3DjTWJZ4vsLGbINfQVvt4uP-scVdVbbw=="
+        },
+        {
+          "title": "2023: Earth's Hottest Year on Record | Climate Central",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFwmZZaGJ6KpgLhQoMCY4uXB11f0lL1wlCVQwVsYD_ZoSVW3egaoGgA5CA3YgzQ6DLoEXCpzbW1MvBkEOIcshX8wIAIYb51u1on3DQMRUNf1Ke0_ATnfZV4-NaZCLj8gPx361BcY8wghXe-VgBqK1OG31aeFv2ibw00weOSQHiDIW1VffmFVwGWmteN"
+        },
+        {
+          "title": "NASA analysis finds 2023 warmest year on record | Courthouse News Service",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVqC9dAngiBUssRUio-HOkWguGOfWEEERTp0Ok-5RHMaX18W0b_I9oV_FDbx20ZcYtTH-dR_yIq5fIulHf-64jMxBeXJG0FfrJt5LHoH9udSvFaSVBNPTSFMPPohWxcA8zpwSqgUPkUYT2Vcgy0_ayOOltuEpGWyY_Hb_xJW-CgTOFWmO19M-JNA=="
+        },
+        {
+          "title": "Assessing the Global Climate in 2023 | News | National Centers for Environmental Information (NCEI) - NOAA",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHooLj12vJWqKx5QPLox3cSXsPAPQYtA7PUJFN6OgHTmWqAgAzKEyDX0iPBtsTAY6huDDQMwHAieNMHA__QTtzK2WVd8KKRDaWkjVPbgbdMGVStdz-YpcqY8-JEPPyvpzs4j2V00nEDr0Qu_I85Kw=="
+        },
+        {
+          "title": "NASA analysis confirms 2023 as warmest year on record | ScienceDaily",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPO5uKV6mOPNDDUJun5KqsNWIWs86dhK7xgy1yl3gH-iqujOEH_cSQ3tqAvM_YoO9Gld6DuUCsZ10r8-0ui2IoFtwWLtRlvDQKLCRwrLduONRzKzMRoH4UJkiE_3xowYwmaAy6O1Jilk4ikdQ9TWAD8rVo4zQD9uc="
+        },
+        {
+          "title": "International report confirms record-high global temperatures, greenhouse gases in 2023",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvuxno5jHqEEjLbTTZqFCZ4-p4c95NJaZErNtCZZGIJCFfM_dm-MvTYIIfWVL5jtirw1l7A8MPlcU1bpSHgxVfQYH4iO2Jz2f9MVG4IecW7LLNcLwEpPRNXYxa3XXhPBVd5YDVGZfg3RexSp9N2DRjHljsyYZwNmcmHxfQ9eqrrFb1Q29ijRiWyGBP2PBdJsAL3AlYtLqXO9wA8kduROpNk81-puDmQV-PQZEgEWTBRE5V"
+        },
+        {
+          "title": "Soaring Records in NASA & NOAA's 2023 Global Global Temperature Report",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLRLgCHQaLauJTc2YIzU1KYoSWC0g5B2nX-k-NB8SXfwfbGeQXGq9o-Ch5Fm-Kp3_p0A53pslZTXojd1WtLwaZHT3b0k_PqSF9o_1rKL3Qk5muWMg4Ew-HF1E="
+        },
+        {
+          "title": "Scientists warn of 'unmistakable trend' after 2025 surges to third-hottest year on record",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLlxc3-VhRMwa6bvJduWJAhS7vC6yES9AthD0_qoCU0IVUbuLgJgLHnG1DA40el6GO28TeryzMORT09z4D0Wy36vmpt1K_uMh_izXLua4YZ_kZu06h1UgzYKaSg7PBUfK73k7O9z7K0IcqmtBw2OlvA6YuxDw5SWIUF9dgARf3D60ZrSR81sN-aOtHEREE7mZvylN2WjNz1QOhtNFFsTJTt0-fVpEVc3DdsbkPPw=="
+        },
+        {
+          "title": "Monthly Climate Reports | Global Climate Report | November 2023 | National Centers for Environmental Information (NCEI) - NOAA",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkVzP5HwDTtR4scBdOE_gyCZJ1-2UiPEPEzp0nSSqFUDpJEzhNE_DweF5Jmi5yIbEYtdVtwqCmnRc23hpLxbwhj9F45tMsp21xaGgoTYWTgpVUjX4J_0m8hEMwtJiySvcq4i46LNHvnFThxRHl0lUVW21p_uVdSI99GuwZTnPF7EXX"
+        },
+        {
+          "title": "Global Temperature Anomalies from 1880 to 2023 - YouTube",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpwCrD3VYAWQ7QxkBa5T6AE2cUdCJCE6dkVPXSTjht2K3P0RTXLNvrNj7w211gGt5j-WXCDKgANNz4E9VF7jlBTSLBb3l-O2xVBdt2E2XfqVuYdcG6WMLUzHIcHjlg64ZkRFN-zw=="
+        },
+        {
+          "title": "Climate Change - NASA Science",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFupFND1GcX5BX_TZQcOnhRuoLqeK7J9uW-IM70vdf5Tv4LZ_46LwSRZ9DtU_ZGLzOpGcDrkXAXLtDucc8xIvTX6drLGqcdWssre6oSeCQs636nPfap3HU33ukegYDfzPT8lw=="
+        },
+        {
+          "title": "Record Temperature Years: 2025, 2024, and 2023 - NASA Scientific Visualization Studio",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAr5g2utUSBX3_sjIkH-YpdaVDjAgL4Vsq7iQI4ZhdV7OtS14u_x5ygLmUoDf7AVJILmrCDxWkEvfYeQFpew7TLCp06vKEY18ja8IGr4SxhFaqnXeFcVOxnw=="
+        },
+        {
+          "title": "Monthly Climate Reports | Global Climate Report | Annual 2023 | National Centers for Environmental Information (NCEI)",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtcXGRW7hbWGj5efxI9pfUa9LuXR-ByGoRgr03mZkaJAm77j8ea6SFOUG72Viz01Sd1jYI3r2jk5iLxuSo2wBhSKUf1T4-zuoqC9j670mK0K4ZrYZ66x4GKzmm6M3DIlHPBnfn41VEFrN0gKKwVu1j7akJSkvDcTUT3YMbXVi_snMZ"
+        },
+        {
+          "title": "Scientists Warn of Summer Heat Spikes as Global Warming Edges Toward 2C",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETM4YoR88sj7FpN5anxXBoeTB3tLCa2Yu6TahexIzLKZFinCuoFRK61o0TUaVO1PwHS_PnLVI8yGMqY6WESEf_mk67glm25bdJekN807TbgXdC9vSjuOhDLb264K3HKaUFvHJRFRvCLOFjQ89uStFc2G3BPl050v2g5HLIJURg-TKDriuyrpxym6DHPVoIAynf"
+        },
+        {
+          "title": "The Science of Climate Change | The world is warming - Wisconsin DNR",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFH3fMYALVxv4q7B9Ri0Hyrmw0N_baoS7NZvFATMxjyd5aVJ7VBHPl1DukWlWq_1CX_i-n_6DvZR8UevzlfzDo4SYOnrzaqB7ZPocD-SFxZQ5M4GbyorU8wDswFZ1CECDZrOqtPrGkaOEw="
+        },
+        {
+          "title": "Overshoot: The World Is Hitting Point of No Return on Climate - Yale E360",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRRlGQ6Q6XE6FKjoQbuFx9YVmKptugaAaR1N-Wzytw7k1BSd58DKak9p_3pCO4OksU6OuGMohE1OiS-XgoByFUt4AAaVkD_13hPUAbE8qEwy5fPpgnVeh1xLZee6D0RT-4OUhCO7Vnr8hKDRqMtG6fnSvI"
+        }
+      ],
+      "id": "3bf3fec8-e125-4546-bb6b-14c2adf2895a",
+      "timestamp": "2026-07-04T10:47:34.685Z",
+      "content_snippet": "The global average temperature in 2023 was the highest on record, surpassing previous records by a s...",
+      "original_input": "The global average temperature in 2023 was the highest on record, surpassing previous records by a significant margin according to multiple climate agencies including NASA and NOAA. Scientists warn this trend will continue.",
+      "is_url": false
+    },
+    {
+      "label": "FAKE",
+      "confidence": 100,
+      "summary": "The news content falsely claims that drinking hot lemon water every morning completely cures type 2 diabetes within 30 days, citing a non-existent Harvard Medical School study with a 100% success rate.",
+      "explanation": "The claims are entirely fabricated and contradict established medical facts. Type 2 diabetes currently has no known cure, and no reputable scientific study, especially one of the scale and success rate mentioned, supports the idea that hot lemon water can cure it. Information about the modest benefits of lemon water for blood sugar management is publicly available, disproving the suppression claim.",
+      "claims": [
+        {
+          "claim_text": "Scientists confirm that drinking hot lemon water every morning completely cures type 2 diabetes within 30 days.",
+          "verdict": "FALSE",
+          "reason": "Multiple medical sources confirm there is no known cure for type 2 diabetes. While lemon water can offer modest benefits for blood sugar management and may slow post-meal glucose spikes, it does not cure the condition.",
+          "source_title": "Type 2 Diabetes: Can You Cure It? - Kaiser Permanente",
+          "source_url": "https://www.kaiserpermanente.org/health-wellness/health-encyclopedia/hmp1032"
+        },
+        {
+          "claim_text": "A study from Harvard Medical School involving 50,000 patients showed 100% success rate.",
+          "verdict": "FALSE",
+          "reason": "There is no credible evidence or mention in reputable medical literature or news of such a study from Harvard Medical School, or any other institution, with these findings. A Harvard-trained doctor discussing lemon water explicitly states it is not a 'miracle cleanse'.",
+          "source_title": "Harvard doctor shares 8 unique facts about lemon water - The Times of India",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyrRpJ-KMIbEv56B95e5x75QDMW4e65h8I_0xPsMClcLhW9mBAiMTfuQ6tcNEhnyjT0Qucpifmizf3poswlbdfrMvefSkBTy_HJCBMo82gdn2JyXFTfoLw4mFFIf2LQo9XtL7IzM1Ud82_xWONPdfXxQjsZsNgi2qfBilOpic2qV31HGV5uDNJVXm10owJivRfW-o1a2nDratszX2G84dWnzYfQ--v8LzVi3NnV_lKg4_UwUIx2_938-satRKxYIaxPshG"
+        },
+        {
+          "claim_text": "Big pharma is trying to suppress this information.",
+          "verdict": "UNPROVEN",
+          "reason": "While there are discussions about the high costs of diabetes medications and differing views on treatment approaches, there is no direct, credible evidence to support the specific claim that 'big pharma' is suppressing information about lemon water as a cure for diabetes, especially given that lemon water does not cure diabetes.",
+          "source_title": "Bad Medicine: A cure for type 2 diabetes - PMC",
+          "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFZ9_gQhFSWHt5npK8msvThQNhqJIaIEWJZcrGwd3-IxN6Eyc7H5ACRVl03nagI1x0kiEsA8Y_j5iraAhuWjrkj3j4m4yHB5EKuOzNwK7607qoATUXMC3bW2D_N4rTTHIS9SvBEkvJo30rmxo="
+        }
+      ],
+      "sources": [
+        {
+          "title": "Type 2 Diabetes: Can You Cure It? - Kaiser Permanente",
+          "uri": "https://www.kaiserpermanente.org/health-wellness/health-encyclopedia/hmp1032"
+        },
+        {
+          "title": "Curing diabetes naturally without medication - London Diabetes Centre",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiE4hmmvBlBvkVNZISQD19JaLqSVNRGDVULYehrofKVjUGErLjBsLtAsyRbKsh5BGOZByfXsBgIu1U9LqeZbfGp1eoqgUsclpMZM_KzAAyFbBYS7t3z62ycpJfrWV3jpQYh44v_UpkjCoo0xZK_sB0J8WzBiO9Wd3WoYF_Jo6ljtntxeIDLJj6wvQbzDqWikBcuQg="
+        },
+        {
+          "title": "Can You Cure or Reverse Diabetes? - GoodRx",
+          "uri": "https://www.goodrx.com/conditions/type-2-diabetes/is-diabetes-curable"
+        },
+        {
+          "title": "Is there a cure for diabetes? | Research",
+          "uri": "https://www.diabetes.org.uk/research/research-impact/is-there-a-cure-for-diabetes"
+        },
+        {
+          "title": "Are Lemons Good For Diabetes? 5 Impressive Benefits - Texas Kidney Center",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1XgtXDoUFiXkxqxXVZWl3yWbgDl_fftLg8ru7ycrrn5AOrPMas8641O5O59HrbHDS46xp-lA5i9PvtLgnuPYJmcu0OEg4-xFIy97h0L28LtckUj-oztJNG0ItqpK1vCrIs6XRDbWS2oKtPjTcW9cdgUXXUePnF6lVuA-Y6u644SiVBJbv_vaxVqpQDvwlkwJGmBk1WykgDjoOQFM508Q="
+        },
+        {
+          "title": "Bad Medicine: A cure for type 2 diabetes - PMC",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFZ9_gQhFSWHt5npK8msvThQNhqJIaIEWJZcrGwd3-IxN6Eyc7H5ACRVl03nagI1x0kiEsA8Y_j5iraAhuWjrkj3j4m4yHB5EKuOzNwK7607qoATUXMC3bW2D_N4rTTHIS9SvBEkvJo30rmxo="
+        },
+        {
+          "title": "The Biggest Benefits of Drinking Lemon Water - GoodRx",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH994S_G8v0VKhNmhuA2FFh7NaVVZ788l9VuN4b0EBT835ixR9Z0unr_FghX331aGS8_hOznmPXAwido1eF3Nk-wBIc3J9NCr4KQvbdB8rJfmP9J_ngUXYUZ4zGfak4dwV0xxF2-nG-KfK7ORROJvhf0m1rz7YUSxq8QfNgYzgmInrQuIYKmtbC7grFZw=="
+        },
+        {
+          "title": "Why Lemon Water Works for Diabetes — And When to Drink It - YouTube",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBUD9YFLSDSsVNm3vzdwPy2q9RRx564gSQfBGKlvDbnvZoln_4ltlkyLdVYQD4RFlNHmYjONB7qJcd2099TNSFdnT0ZEz_TrL7vMtUUtSTA2O7ZpLw_yVlY5dAJ4HbyKl_2gI4yDQ="
+        },
+        {
+          "title": "Is lemon Good for Diabetes? & How to Use Lemon? - Fitterfly",
+          "uri": "https://fitterfly.com/blog/is-lemon-good-for-diabetes-and-how-to-use-lemon"
+        },
+        {
+          "title": "Can Lemon Water Lower Blood Sugar? A Practical Look at the Evidence and Everyday Use",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESOwBq86dfDUQO3dRFndH4cbRyhHjg6kf8T_xZ5E8RrPNrnYQSkYEJTgphwpGVmne710RqNPZGpVfFKcljAHceT7Z_5kveJ4cvwxvM7qMJJ1lGtnX1qJRok_Vl5tzNSyG7jgydHnAyTYFDC7-dUqY-tckUpOp_TYziktR8SCA5Xq2JP6Klm2-AmfqNQ6wB6mtukfHr-Qq1BHl_JwRjmBhJD3rzaYZ3ouPakMz4yPMgQKTB6foouyCnpV3sSDq7Z1mOk9v0OI8uLKByRpqBJzMFlY0GvNcXOLYTyV727tLB_bqiis_Nj-w="
+        },
+        {
+          "title": "Are Lemons Good For Diabetes",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGF3E6Sq5Y0cmbodRE41EYl50h6lsA6-vaAUISwQEv8Se1Z7m5aDVSI2cOwKdjEKu1AEckSdVT1I7xB5RlKuxpLBa9hTUs1czPhNU3KdK3TCtWfBoIC97yqzjiI-2igSm6Z-hq4GEgWRb4laDXdkqfdENUFKxnbP5_a083t75_-1yvlfQfDQ2eYK8aiKZjgQIaaTstlLD7g"
+        },
+        {
+          "title": "Does Lemon Water Help Lower Blood Sugar Levels?",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjmQjCQnskimL9r_fkUtkILPT1OI23kbEK5XyJvfnYDHPDYu6XJe0lUts8AmiwJO9_cHW02iG6dRTgQcybxVIknSsPIbZyO3pwKeeTAw9KbjO851JjvUrKqcqFsTtrQnA2KZ8v7pS9fNCuh8I6WhgfQgbkZIVybm7VtOesUh7rgNlLdu53LpZRGLX-OjlaYMhiDgX3X9F-0h0dE-NypNP7pu059fiwLQuaV4NTfriLmPMVEAJ-MQpau0r5VXBz1pRMTmB8JqugwX-krvn7PCg78qvcTR0191xR1UgxLuo="
+        },
+        {
+          "title": "Does Lemon Water Lower Blood Sugar? Evidence, Practical Use, and Realistic Expectations",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGm57ix8c5ZtcL8HY-udYwEZtlGLmDzdF3Iz7o3awSYnuztjz7vTQKM6T0Br0B3ZBY8z5r6MyTxZ3CLu6AVnV_dr1uJimjDkyKeTwC08bv0RkH31HLZTwWNQ9MmMkt-O5m2jvJCEnwg2uh-XOUqh4I4C3NHKgKAMtFCl4oZ4UquvKzjn0ke_hqM5wg7hDuQ1RynpUtqCTVqoLiYjXCKDCIYMcJ69R-c5dctelipC_-l4AoGDTLt8bWp04_m0_p1xDG9yfw025jauimi8lEVeKFRm5dZm-rNTqiaFCCr2ek="
+        },
+        {
+          "title": "Harvard doctor shares 8 unique facts about lemon water - The Times of India",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyrRpJ-KMIbEv56B95e5x75QDMW4e65h8I_0xPsMClcLhW9mBAiMTfuQ6tcNEhnyjT0Qucpifmizf3poswlbdfrMvefSkBTy_HJCBMo82gdn2JyXFTfoLw4mFFIf2LQo9XtL7IzM1Ud82_xWONPdfXxQjsZsNgi2qfBilOpic2qV31HGV5uDNJVXm10owJivRfW-o1a2nDratszX2G84dWnzYfQ--v8LzVi3NnV_lKg4_UwUIx2_938-satRKxYIaxPshG"
+        },
+        {
+          "title": "Why Does Lemon Water Lower Blood Sugar?",
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvkssyK6rChQ5sIhtLng0hFhDLkTHDMLYsUGZGpqth_Qj_pd7mMRwe4Oosa_iyRQev99RoD5_aznNpOtzHqq_MrYnchTfCLgkvsHi1GWKYjWdIt8a0NNU2F8Fnd3l7PmcCDpCMNW9kjMdntKspOuDYfy5WA_O_m3iyziGua-meK-VrNBG8Uls6ltFMf7pvvx1gye8sQsuMmCDfLns5d55w470jEvra7y-CfKMySAVBC_cCl6tAAUBgxtMZmlca5IVC2j5TjT900d4NLMtBgSgde80lEm4HHnbT693kNfWytwaqRgzAh897wh0="
+        }
+      ],
+      "id": "d59d07ab-ef2d-4219-88c5-93d1a0071d24",
+      "timestamp": "2026-07-04T10:42:53.431Z",
+      "content_snippet": "BREAKING: Scientists confirm that drinking hot lemon water every morning completely cures type 2 dia...",
+      "original_input": "BREAKING: Scientists confirm that drinking hot lemon water every morning completely cures type 2 diabetes within 30 days. A study from Harvard Medical School involving 50,000 patients showed 100% success rate. Big pharma is trying to suppress this information.",
+      "is_url": false
+    }
+  ]
+}

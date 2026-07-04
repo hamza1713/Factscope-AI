@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:server\"",
     "dev:frontend": "vite --port=3000 --host=0.0.0.0",
-    "dev:server": "tsx server/index.ts",
+    "dev:server": "tsx watch --ignore server/db.json --ignore data server/index.ts",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
