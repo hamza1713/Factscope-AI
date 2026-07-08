@@ -1,0 +1,74 @@
+appId: com.factscope.ai
+productName: Factscope AI
+copyright: Copyright © 2024 Factscope AI
+
+# Output directory for built packages
+directories:
+  output: C:\Users\Hamza Ali\factscope-build-output
+  buildResources: assets
+
+# Files to include in the package
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - node_modules/**/*
+  - package.json
+
+# Extra resources bundled alongside the app
+extraResources:
+  - from: assets/
+    to: assets/
+    filter:
+      - "*.png"
+      - "*.ico"
+
+# ── Windows build configuration ────────────────────────────────────────────────
+win:
+  icon: assets/icon.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+  artifactName: "Factscope-AI-Setup-${version}-${arch}.${ext}"
+
+# ── NSIS Installer (recommended) ──────────────────────────────────────────────
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  allowElevation: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Factscope AI
+  installerIcon: assets/icon.ico
+  uninstallerIcon: assets/icon.ico
+  installerHeaderIcon: assets/icon.ico
+  deleteAppDataOnUninstall: false
+  menuCategory: "Factscope AI"
+  installerSidebar: ~
+
+# ── Portable ──────────────────────────────────────────────────────────────────
+portable:
+  artifactName: "Factscope-AI-Portable-${version}-${arch}.${ext}"
+
+# ── macOS (optional, for future use) ──────────────────────────────────────────
+mac:
+  icon: assets/icon.png
+  category: public.app-category.news
+  target:
+    - dmg
+    - zip
+
+# ── Linux (optional, for future use) ─────────────────────────────────────────
+linux:
+  icon: assets/icon.png
+  target:
+    - AppImage
+    - deb
+  category: Network
+
+# ── Compression ───────────────────────────────────────────────────────────────
+compression: maximum

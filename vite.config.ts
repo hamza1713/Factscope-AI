@@ -5,6 +5,9 @@ import {defineConfig} from 'vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  // Use './' as base so that built assets use relative paths.
+  // This is required for Electron to load them via the file:// protocol.
+  base: './',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, '.'),

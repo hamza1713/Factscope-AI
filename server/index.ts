@@ -2,15 +2,26 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { GoogleGenAI } from '@google/genai';
 import crypto from 'crypto';
+import http from 'http';
+import path from 'path';
+import { existsSync } from 'fs';
 import { getCachedAnalysis, saveAnalysis, getDashboardStats } from './db';
 
-dotenv.config();
+// Load .env only when not already injected by Electron main process
+if (!process.env.GEMINI_API_KEY) {
+  dotenv.config();
+}
 
 const app = express();
-const port = process.env.PORT || 3001;
 
 // Middleware
 app.use(express.json({ limit: '1mb' }));
+
+// Serve built frontend static files in production (Electron packaged mode)
+const distPath = path.join(__dirname, '..', '..', 'dist');
+if (existsSync(distPath)) {
+  app.use(express.static(distPath));
+}
 
 // ─── Model configuration ─────────────────────────────────────────────────────
 // Primary model — highest quality, used by default.
@@ -458,6 +469,22 @@ function decodeHtmlEntities(str: string): string {
 
 app.use(errorHandler);
 
-app.listen(port, () => {
-  console.log(`Secure backend server running on http://localhost:${port}`);
-});
+// ─── Export for Electron ────────────────────────────────────────────────────
+/**
+ * Export a factory function so Electron's main process can start the server
+ * programmatically on a specific port without needing child processes.
+ */
+export function createServer(listenPort: number | string = 3001): http.Server {
+  const server = http.createServer(app);
+  server.listen(listenPort, () => {
+    console.log(`[Server] Express running on http://localhost:${listenPort}`);
+  });
+  return server;
+}
+
+// ─── Standalone dev/CLI entry point ─────────────────────────────────────────
+// Only auto-start if this file is being run directly (not imported by Electron)
+if (require.main === module) {
+  const standalonePort = process.env.PORT || 3001;
+  createServer(standalonePort);
+}

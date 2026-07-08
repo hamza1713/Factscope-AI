@@ -23,6 +23,21 @@ export interface AnalysisResult {
   sources: GroundingSource[];
 }
 
+// ─── Dynamic API Base URL ──────────────────────────────────────────────────
+let apiBase = '';
+
+if (typeof window !== 'undefined' && window.electronAPI && typeof window.electronAPI.getServerUrl === 'function') {
+  window.electronAPI.getServerUrl().then((url) => {
+    apiBase = url;
+  }).catch((err) => {
+    console.error('Failed to get Electron server URL:', err);
+  });
+}
+
+const getUrl = (path: string): string => {
+  return `${apiBase}${path}`;
+};
+
 export const analyzeContent = async (
   input: string,
   isUrl = false,
@@ -40,7 +55,7 @@ export const analyzeContent = async (
     : timeoutController.signal;
 
   try {
-    const response = await fetch('/api/analyze', {
+    const response = await fetch(getUrl('/api/analyze'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ input, isUrl }),
@@ -82,7 +97,7 @@ export interface DashboardStats {
 }
 
 export const fetchDashboardStats = async (): Promise<DashboardStats> => {
-  const response = await fetch('/api/dashboard');
+  const response = await fetch(getUrl('/api/dashboard'));
   if (!response.ok) {
     const errorData = await response.json().catch(() => null);
     throw new Error(errorData?.error || `API Error: ${response.statusText}`);
@@ -95,7 +110,7 @@ export const sendChatMessage = async (
   history: ChatMessage[],
   context: AnalysisResult
 ): Promise<ChatResponse> => {
-  const response = await fetch('/api/chat', {
+  const response = await fetch(getUrl('/api/chat'), {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

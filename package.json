@@ -1,8 +1,11 @@
 {
   "name": "factscope-ai",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "AI-powered news credibility and fact verification desktop application powered by Google Gemini.",
+  "author": "Factscope AI",
   "type": "module",
+  "main": "dist-electron/electron/main.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:server\"",
     "dev:frontend": "vite --port=3000 --host=0.0.0.0",
@@ -10,13 +13,18 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "electron:dev": "concurrently \"npm run dev:frontend\" \"npm run dev:server\" \"wait-on http://localhost:3000 http://localhost:3001 --exec cross-env NODE_ENV=development electron .\"",
+    "electron:compile": "tsc -p electron/tsconfig.json && powershell -Command \"'{ \\\"type\\\": \\\"commonjs\\\" }' | Set-Content dist-electron/package.json\"",
+    "electron:preview": "npm run build && npm run electron:compile && cross-env NODE_ENV=production electron .",
+    "electron:build": "npm run build && npm run electron:compile && electron-builder && powershell -Command \"New-Item -ItemType Directory -Force -Path release; Copy-Item -Path 'C:\\Users\\Hamza Ali\\factscope-build-output\\Factscope-AI-*' -Destination 'release\\' -Force\""
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
     "@tailwindcss/vite": "^4.1.14",
     "@vitejs/plugin-react": "^5.0.4",
     "dotenv": "^17.2.3",
+    "electron-store": "^10.0.1",
     "express": "^4.21.2",
     "lucide-react": "^0.546.0",
     "motion": "^12.23.24",
@@ -29,9 +37,13 @@
     "@types/node": "^22.14.0",
     "autoprefixer": "^10.4.21",
     "concurrently": "^9.2.1",
+    "cross-env": "^7.0.3",
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "wait-on": "^8.0.3"
   }
 }

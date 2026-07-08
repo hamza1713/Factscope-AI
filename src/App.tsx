@@ -14,6 +14,7 @@ import {
   DashboardStats,
   GroundingSource
 } from './geminiServices';
+import ApiKeySetup from './components/ApiKeySetup';
 import {
   Shield,
   Search,
@@ -34,6 +35,7 @@ import {
   Send,
   WifiOff,
   ChevronDown,
+  Settings,
 } from "lucide-react";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -276,6 +278,32 @@ export default function App() {
   const chatEndRef = useRef<HTMLDivElement>(null);
   const chatInputRef = useRef<HTMLInputElement>(null);
 
+  // ── Electron desktop integration ──────────────────────────────────────────
+  const isElectron = typeof window !== 'undefined' && !!window.electronAPI;
+  const [showApiKeySetup, setShowApiKeySetup] = useState(false);
+  const [isFirstLaunch, setIsFirstLaunch] = useState(false);
+
+  // Check on mount if we're in Electron and need the first-launch setup screen
+  useEffect(() => {
+    if (!isElectron || !window.electronAPI) return;
+    window.electronAPI.isFirstLaunch().then((firstLaunch) => {
+      if (firstLaunch) {
+        setIsFirstLaunch(true);
+        setShowApiKeySetup(true);
+      }
+    });
+  }, [isElectron]);
+
+  // Listen for the "open-settings" IPC event triggered by the app menu (Ctrl+,)
+  useEffect(() => {
+    if (!isElectron) return;
+    const ipcRenderer = (window as any).ipcRenderer;
+    // Use a custom event dispatched by the preload for menu-triggered settings
+    const handler = () => setShowApiKeySetup(true);
+    window.addEventListener('electron-open-settings', handler);
+    return () => window.removeEventListener('electron-open-settings', handler);
+  }, [isElectron]);
+
   // Auto-scroll chat to bottom when new messages arrive
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -304,7 +332,12 @@ export default function App() {
   useEffect(() => {
     const checkHealth = async () => {
       try {
-        const res = await fetch('/api/dashboard', { signal: AbortSignal.timeout(4000) });
+        let url = '/api/dashboard';
+        if (window.electronAPI && typeof window.electronAPI.getServerUrl === 'function') {
+          const apiBaseUrl = await window.electronAPI.getServerUrl();
+          url = `${apiBaseUrl}/api/dashboard`;
+        }
+        const res = await fetch(url, { signal: AbortSignal.timeout(4000) });
         setBackendOnline(res.ok || res.status !== 404);
       } catch {
         setBackendOnline(false);
@@ -497,16 +530,41 @@ ID: ${result.id}
   return (
     <div className="flex h-screen w-full overflow-hidden font-sans text-slate-200 bg-[#0f172a]">
 
+      {/* ── Electron: First-launch API key setup / Settings modal ────────────── */}
+      {showApiKeySetup && (
+        <ApiKeySetup
+          isModal={!isFirstLaunch}
+          currentKey={null}
+          onSave={(key) => {
+            setIsFirstLaunch(false);
+            setShowApiKeySetup(false);
+            // Small delay to let the server pick up the new key
+            setTimeout(() => setBackendOnline(null), 500);
+          }}
+          onClose={isFirstLaunch ? undefined : () => setShowApiKeySetup(false)}
+        />
+      )}
+
       {/* ── Sidebar ──────────────────────────────────────────────────────────── */}
       <aside className="hidden md:flex w-80 flex-col border-r border-slate-800 bg-slate-900/50 p-4">
         <div className="mb-8 flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 shadow-lg shadow-blue-500/20">
             <Shield className="h-6 w-6 text-white" />
           </div>
-          <div>
+          <div className="flex-1">
             <h1 className="text-xl font-bold tracking-tight text-white leading-tight">Factscope-AI</h1>
             <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">AI Fact Verification</p>
           </div>
+          {/* Settings button (Electron desktop only) */}
+          {isElectron && (
+            <button
+              onClick={() => setShowApiKeySetup(true)}
+              title="Settings (Ctrl+,)"
+              className="p-1.5 rounded-lg text-slate-500 hover:text-slate-200 hover:bg-slate-800 transition-all"
+            >
+              <Settings className="w-4 h-4" />
+            </button>
+          )}
         </div>
 
         <div className="flex-1 space-y-6 overflow-y-auto pr-1">

@@ -3,7 +3,7 @@
 
 # Factscope-AI
 
-### *Enterprise-Grade AI News Credibility & Claim Verification Engine*
+### *Enterprise-Grade AI News Credibility & Claim Verification Desktop Application & Engine*
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![React](https://img.shields.io/badge/Frontend-React_19-blue?logo=react&logoColor=white)](https://react.dev)
@@ -11,6 +11,8 @@
 [![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind_CSS_v4-38bdf8?logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 [![Express](https://img.shields.io/badge/Backend-Express_4-lightgrey?logo=express&logoColor=white)](https://expressjs.com)
 [![TypeScript](https://img.shields.io/badge/Language-TypeScript_5.8-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Electron](https://img.shields.io/badge/Desktop-Electron_36-478aef?logo=electron&logoColor=white)](https://www.electronjs.org)
+[![Builder](https://img.shields.io/badge/Packaged-electron--builder-brightgreen?logo=electron&logoColor=white)](https://www.electron.build)
 [![AI Engine](https://img.shields.io/badge/AI_Engine-Gemini_2.5_Flash-orange?logo=google-gemini&logoColor=white)](https://ai.google.dev)
 [![Fallback Engine](https://img.shields.io/badge/Fallback-Gemini_3.1_Flash_Lite-yellow?logo=google-gemini&logoColor=white)](https://ai.google.dev)
 [![Grounding](https://img.shields.io/badge/Grounding-Google_Search_Enabled-green?logo=google&logoColor=white)](https://ai.google.dev/gemini-api/docs/google-search)
@@ -128,11 +130,28 @@ Unlike simple chatbot wrappers, Factscope-AI provides:
 | **Keyboard Shortcuts** | `Ctrl+Enter` triggers analysis from the text input; `Enter` sends chat messages and triggers URL analysis. |
 | **Responsive Error States** | Distinct error states for network failures, server restarts, API timeouts, and validation errors — each with specific recovery guidance. |
 
+### 🖥️ Desktop Application (Electron)
+
+| Feature | Description |
+|---|---|
+| **Local Settings & API Key Setup** | Obfuscated storage of user's Gemini API key locally on the machine via `electron-store`, avoiding server-side key requirements for desktop users. |
+| **First-Launch Onboarding** | Detects empty configuration and guides the user through API key registration before enabling fact-check submissions. |
+| **Minimize to System Tray** | The application runs in the background and can minimize to the system tray (`Ctrl+Q` or tray context menu to exit). |
+| **Dynamic Port Binding** | Express server starts programmatically on launch inside Electron, dynamically querying and binding to an available port. |
+| **Native Application Menu** | Desktop-friendly file menus featuring application info, settings shortcuts (`Ctrl+,` or `Cmd+,`), and AI studio links. |
+| **Secure Link Redirection** | Intercepts external navigation attempts and redirects links to open in the user's default system browser. |
+| **GPU Optimization Flags** | Tailored flags disable GPU caches and hardware acceleration in Windows environments to prevent "Access is denied" folder locks. |
+
 ---
 
 ## 🏛️ System Architecture
 
-Factscope-AI uses a **secure, decoupled client-server architecture** that strictly separates the browser from all sensitive API infrastructure. The frontend is a pure consumer of the backend's REST API — it never touches API keys, AI SDKs, or external services directly.
+Factscope-AI operates in two deployment modes:
+
+1. **Web Deployment Mode**: Uses a decoupled client-server architecture. The React frontend is deployed to a host like Vercel or Netlify and communicates with the backend REST endpoints (`/api/*`), keeping AI API keys secure in serverless environment variables.
+2. **Desktop Application Mode**: Runs in a self-contained Electron environment. On startup, the Electron main process runs an embedded Express server on a dynamically resolved port. It reads the local config (API key) stored securely in `electron-store`, injects it into the environment of the server, and loads the frontend. Inter-process communication (IPC) bridges settings changes between React and the Electron shell.
+
+Regardless of the mode, the frontend is a pure consumer of the backend REST API — it never exposes credentials or interacts with AI APIs directly.
 
 ```mermaid
 graph TB
@@ -586,6 +605,7 @@ PORT=3001
 
 ### Step 3: Run Development Servers
 
+#### For Web App Development:
 ```bash
 npm run dev
 ```
@@ -599,17 +619,47 @@ This starts **both** servers concurrently:
 
 The Vite dev proxy automatically routes all `/api/*` requests from port 3000 to port 3001.
 
+#### For Desktop App (Electron) Development:
+```bash
+npm run electron:dev
+```
+This runs the React frontend, the Express backend, and then launches the Electron application container, configuring context isolation and preloading settings.
+
+### Step 4: Previewing & Building Electron App
+
+To run or build the desktop app in production-like environments:
+
+*   **Preview Production Mode Locally:**
+    ```bash
+    npm run electron:preview
+    ```
+    This bundles React using Vite, compiles the Electron main/preload TypeScript files, and runs the Electron client using the production build of the frontend and Express server.
+*   **Compile Electron TypeScript:**
+    ```bash
+    npm run electron:compile
+    ```
+    Compiles TypeScript source code in the `electron/` directory.
+*   **Package Executable/Installers:**
+    ```bash
+    npm run electron:build
+    ```
+    Bundles the frontend, compiles the Electron codebase, and runs `electron-builder` to package native installer binaries. The finished packages are copied into the `release/` directory.
+
 ### Available Scripts
 
 | Script | Command | Description |
 |---|---|---|
-| `npm run dev` | `concurrently` | Start both frontend and backend in dev mode |
-| `npm run dev:frontend` | `vite --port=3000` | Start only the Vite frontend |
-| `npm run dev:server` | `tsx watch server/index.ts` | Start only the Express backend (with auto-reload) |
+| `npm run dev` | `concurrently ...` | Start both frontend and backend web dev servers |
+| `npm run dev:frontend` | `vite --port=3000 ...` | Start only the Vite frontend |
+| `npm run dev:server` | `tsx watch server/index.ts ...` | Start only the Express backend (with auto-reload) |
 | `npm run build` | `vite build` | Build production frontend bundle |
-| `npm run preview` | `vite preview` | Preview the production build locally |
+| `npm run preview` | `vite preview` | Preview the production web build locally |
 | `npm run lint` | `tsc --noEmit` | Type-check the entire codebase |
 | `npm run clean` | `rm -rf dist` | Remove the build output directory |
+| `npm run electron:dev` | `concurrently ...` | Run Web + Server + Electron in dev mode with DevTools |
+| `npm run electron:compile` | `tsc -p electron/tsconfig.json ...` | Compile Electron TypeScript files |
+| `npm run electron:preview` | `npm run build && ...` | Compile and run Electron in production mode pointing to embedded server |
+| `npm run electron:build` | `npm run build && ...` | Build and package the application into desktop executables/installers |
 
 ---
 

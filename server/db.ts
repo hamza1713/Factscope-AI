@@ -35,9 +35,23 @@ export interface DashboardStats {
   }>;
 }
 
-// Store the database OUTSIDE the server/ directory so tsx watch and Vite's
+// ─── Database file path ──────────────────────────────────────────────────────
+// Default: store OUTSIDE the server/ directory so tsx watch and Vite's
 // file watcher do not restart/reload the app when analysis results are saved.
-const DB_FILE = path.resolve('data/db.json');
+// In Electron packaged mode, this is overridden to use the OS userData directory
+// (e.g., %APPDATA%/factscope-ai/ on Windows) via setDbPath().
+let DB_FILE = path.resolve('data/db.json');
+
+/**
+ * Override the database file path. Called by Electron's main process to
+ * redirect storage to the OS user data directory so data persists across
+ * app updates and is not stored inside the app bundle.
+ */
+export function setDbPath(dir: string): void {
+  DB_FILE = path.join(dir, 'db.json');
+  console.log(`[DB] Database path set to: ${DB_FILE}`);
+  initDb();
+}
 
 // Initialize database file
 function initDb() {
