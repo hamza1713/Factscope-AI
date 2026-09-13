@@ -1,9 +1,11 @@
+> **Project scope:** A portfolio application for claim extraction and Gemini-assisted credibility analysis, with web and Electron interfaces. Start with the [analysis endpoint](api/analyze.ts), [desktop implementation](electron/), and setup instructions below. The final quota fallback removes search grounding; model confidence is not calibrated accuracy and citations require review. Deployment, uptime, and factual accuracy are not guaranteed by this repository.
+
 <div align="center">
 
 
 # Factscope-AI
 
-### *Enterprise-Grade AI News Credibility & Claim Verification Desktop Application & Engine*
+### *AI-Assisted News Credibility & Claim Analysis — Web and Desktop*
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![React](https://img.shields.io/badge/Frontend-React_19-blue?logo=react&logoColor=white)](https://react.dev)
@@ -59,7 +61,7 @@ In the modern digital landscape, the rapid spread of misinformation, deceptive h
 Unlike simple chatbot wrappers, Factscope-AI provides:
 - **Structured, machine-readable output** with per-claim verdicts, confidence scores, and source citations.
 - **A full verification pipeline** including URL scraping, claim extraction, web-grounded verification, caching, and persistent analytics.
-- **A production-ready architecture** with a secure backend that never exposes API keys to the browser.
+- **A client-server architecture** with a secure backend that never exposes API keys to the browser.
 
 ---
 
@@ -110,7 +112,7 @@ Unlike simple chatbot wrappers, Factscope-AI provides:
 
 | Feature | Description |
 |---|---|
-| **3-Tier AI Fallback Engine** | Automatic model degradation: `Gemini 2.5 Flash` → `Gemini 3.1 Flash Lite` → `Gemini 3.1 Flash Lite (Searchless)`. Ensures the system never fully fails due to quota exhaustion. *(See detailed section below.)* |
+| **3-Tier AI Fallback Engine** | Automatic model degradation: `Gemini 2.5 Flash` → `Gemini 3.1 Flash Lite` → `Gemini 3.1 Flash Lite (Searchless)`. Attempts recovery from quota errors; all tiers can still fail. *(See detailed section below.)* |
 | **24-Hour Intelligent Caching** | Duplicate inputs are automatically served from cache (keyed by normalized input + URL flag, TTL: 24 hours), eliminating redundant API charges and reducing latency. |
 | **Request Abort & Deduplication** | Submitting a new analysis while one is in-flight automatically aborts the previous request via `AbortController`, preventing race conditions. |
 | **90-Second Client Timeout** | A client-side timeout guard prevents indefinite hanging if the AI service is unresponsive, with a clear user-facing error message. |
